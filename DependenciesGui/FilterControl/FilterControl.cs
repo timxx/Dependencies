@@ -376,7 +376,8 @@ namespace Dependencies
         public void Clear()
         {
             byPassEvent = true;
-            filterBox.Text = string.Empty;
+            if (filterBox != null)
+                filterBox.Text = string.Empty;
             Keyboard.Focus(filterBox);
 
 
